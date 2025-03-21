@@ -1,0 +1,23 @@
+{
+  "name": "purgomalum-bdd-api",
+  "type": "module",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_OPTIONS='--loader ts-node/esm' cucumber-js --import ./step_definitions/filterSteps.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@cucumber/cucumber": "^11.2.0",
+    "@types/chai": "^5.2.0",
+    "@types/cucumber": "^6.0.1",
+    "@types/node": "^22.13.10",
+    "axios": "^1.8.4",
+    "chai": "^5.2.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
+  }
+}
