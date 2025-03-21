@@ -24,4 +24,4 @@ git clone https://github.com/fglryz/PurgoMAlum-Bdd-API.git
 
 Install dependencies: npm install
 
-Run the tests: npm test
+Run the tests: npm run BDD-API

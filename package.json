@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "NODE_OPTIONS='--loader ts-node/esm' cucumber-js --import ./step_definitions/filterSteps.ts"
+    "BDD-API": "NODE_OPTIONS='--loader ts-node/esm' cucumber-js --import ./step_definitions/filterSteps.ts"
   },
   "keywords": [],
   "author": "",

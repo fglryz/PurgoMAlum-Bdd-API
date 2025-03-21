@@ -2,7 +2,7 @@
 Feature: Profanity Filter via REST API
 
   Scenario: Filter a sentence with default profanity list
-    Given I have the text "you fucking idiot"
+    Given I have the text "you motherfucker idiot"
     When I send a REST request to the profanity filter
     Then the response should contain filtered characters
 
@@ -13,13 +13,13 @@ Feature: Profanity Filter via REST API
     Then the response should return the original text
 
   Scenario: Get RESTful response in JSON format
-    Given I have the text "bullshit response"
+    Given I have the text " response"
     And I want the response format to be "json"
     When I send a REST request to the profanity filter
     Then the response should be a valid JSON response
 
   Scenario: Profane word is filtered
-    Given I have the text "you fucking idiot"
+    Given I have the text "You son of a bitch"
     When I send a REST request to the profanity filter
     Then the response should contain filtered characters
 
@@ -28,11 +28,6 @@ Feature: Profanity Filter via REST API
     When I send a REST request to the profanity filter
     Then the response should return clean text
 
-  Scenario: API returns valid JSON response
-    Given I have the text "bullshit response"
-    And I want the response format to be "json"
-    When I send a REST request to the profanity filter
-    Then the response should be a valid JSON response
 
   Scenario: Profane word replaced with custom fill text
     Given I have the text "you piece of shit"
